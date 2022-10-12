@@ -43,7 +43,7 @@ class ProfesorController extends Controller{
         $director_id =  $this->session->get('id');
         $profesores =$this->model->getProfesores($director_id);
       //  var_dump($profesores);
-//var_dump($director_id );
+
         $profesoresResponse = [];
         foreach ($profesores as $key => $profesor) {
             $persona = $this->persona->mostrar($profesor['persona_id']);
