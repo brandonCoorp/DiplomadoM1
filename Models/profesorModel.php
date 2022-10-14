@@ -21,6 +21,7 @@ class ProfesorModel extends Model{
                     'profesion'=>$row['profesion'],
                     'grado_id'=>$row['grado_id'],
                     'persona_id'=>$row['persona_id'],
+                    'director_id'=>$row['director_id'],
                 ];
             }
               return $item;
